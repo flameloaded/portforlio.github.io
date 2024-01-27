@@ -2639,9 +2639,15 @@ input, select, textarea {
 		}
 		.image.chart {
 			display: block;
-			margin: 4rem 0;
-			width: 60%;
+			margin: 1rem 0;
+			width: 50%;
 		}
+		.image.column {
+			display: block;
+			margin: 1rem 0;
+			width: 100%;
+		}
+		
 
 			.image.main:first-child {
 				margin-top: 0;
@@ -2695,7 +2701,7 @@ input, select, textarea {
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1rem;
+			padding: 0 0 0 0rem;
 			vertical-align: middle;
 		}
 

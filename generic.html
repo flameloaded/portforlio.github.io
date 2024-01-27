@@ -40,101 +40,280 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Diagnostic Analysis on Cookies Business Using Power BI</h1>
-									<p> Executive Summary: Diagnostic Analysis of Low Purchase from Promo and Acme Grocery Store</p>
+									<h1>Descriptive Analysis on OLK STORE Using Power BI</h1>
+									<p> Executive Summary: Descriptive Analysis on OLK STORE </p>
 								</header>
-								<div class="image main"><img src="images/cookiesdb.png" alt="" /></div>
+								<div class="image main"><img src="images/olkdashboard.PNG" alt="" /></div>
 								<p>
 								<strong>
 									Introduction:
 								</strong>
-									OLK Store, a wholesale cookies retailer, has been experiencing low purchases from two significant
-									 customers, Promo and Acme Grocery Store. This diagnostic analysis aims to uncover the root cause of 
-									 the low purchase and present key performance indicators (KPIs) such as total transactions, total profit, total 
-									 revenue, total number of cookies sold, and production cost. The analysis was conducted as part of an intern
-									  project, involving data cleaning and modeling using Power Query and Power BI.
-									
+								OLK Store, a prominent wholesale supplier specializing in cookies, commissioned a comprehensive
+								 analysis to elucidate critical aspects of its business operations. The focus of this analysis
+								  was to delineate key performance indicators (KPIs) that encompassed total transactions, total profit,
+								   total revenue, total units of cookies sold, and production costs. The project additionally delved into
+								    customer segmentation based on the quantity of cookies purchased, with a keen examination of the 
+									associated shipping durations.
+
+								Executed as part of an intern project, this analysis undertook meticulous data cleaning and modeling 
+								procedures employing advanced tools such as Power Query and Power BI. The utilization of these sophisticated
+								 analytical tools ensured a rigorous and insightful examination of OLK Store's operational dynamics, allowing 
+								 for a nuanced understanding of various facets crucial to strategic decision-making and business optimization.
+								  The outcomes of this project contribute valuable insights for refining business strategies and enhancing 
+								  overall performance within the wholesale cookies supply domain.
+								
+								
+								
+								
+								
+								
+							   <p>
+								<strong>	
 									Data Preparation:
-									The raw data, spanning four years and organized into separate Excel sheets, was imported into Power Query. 
+								</strong>
+								
+								<img class="image chart" src="images/dataset.png"  alt="" />
+								
+								
+									The raw data, spanning four years and organized into separate Excel sheets, was imported into Power Query using append 
+									and merge. 
 									The data underwent cleaning to address null values and unwanted figures. Afterward, it was loaded into Power BI
 									 for further analysis.
+									 <p>
+										<strong>
+											Total Transactions By Customer:
+										</strong>
+										<img class="image column" src="images/olkcustomertotaltrans.PNG"  alt="" />
+										During the period spanning from 2017 to 2020, the following transactional
+										 data was observed for several establishments:
+										<ul>
+											<strong>
+											<h4>
+												YT Restaurants:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 670</li>
+											<li>Number of Cookies Shipped: 345,614</li>
+										</ul>
+										<ul>
+											<strong>
+											<h4>
+												Quick Bite Conveniences Store:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 779</li>
+											<li>Number of Cookies Shipped: 395,394</li>
+										</ul>
+
+										<ul>
+											<strong>
+											<h4>
+												Promo Sales:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 59</li>
+											<li>Number of Cookies Shipped: 31,778</li>
+										</ul>
+										<ul>
+											<strong>
+											<h4>
+												Cascade Grovers:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 918</li>
+											<li>Number of Cookies Shipped: 479,965</li>
+										</ul>
+										<ul>
+											<strong>
+											<h4>
+												Park & Eat LLC:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 597</li>
+											<li>Number of Cookies Shipped: 313,113</li>
+										</ul>
+										<ul>
+											<strong>
+											<h4>
+												Acme Grocery Store:
+											</h4>
+											</strong>	
+											<li>Total Transactions: 208</li>
+											<li>Number of Cookies Shipped: 112,358</li>
+										</ul>
+									</p>
+									Therefore, the combined total transactions for all establishments over the period of 2017 to 2020 amount to <strong>3,231</strong>
+									Total Cookies Shipped from 2017 to 2020: amounts to <strong>1,198,257.</strong>
+									<p>
+										<strong>
+											Customer Segment:
+										</strong>
+										<img class="image column" src="images/olkpurchasesegment.PNG"  alt="" />
+										Establishments demonstrating transactional volumes equal to or exceeding 300 
+										were categorized as high-purchasing customers, reflecting a substantial level of engagement and business
+										 activity. Conversely, establishments with transactional volumes
+										 below 300 were classified as low-purchasing customers, indicating a comparatively moderate 
+										 level of business interaction. 
+										 This classification framework provides a structured approach to assessing the performance 
+										 and purchasing behavior of each customer, facilitating a nuanced understanding of their
+										  respective contributions to the overall business landscape.
+
+
+
+
+
+
+ 									</p>
+									 <p>
+										<strong>
+											Shipments Duration Segment:
+										</strong>
+										<img class="image column" src="images/olkshipmentduration.PNG"  alt="" />
+										The categorization of shipment durations is established based on a discerning criterion: durations equal
+										 to or less than 3 are classified as expedited or fast shipments, whereas durations exceeding 3 are designated
+										  as standard or slower shipments. This meticulous classification system enables a nuanced evaluation of 
+										  shipping efficiency, allowing for a more strategic and informed approach to logistics management.
+ 									</p>		
 								</p>		
 								<p>
 								<strong>	
 									Data Modeling:
 								</strong>
+								<div>
+									<img class="image column" src="images/model.PNG"  alt="" />
+								</div>
 									A critical step in the process involved the creation of a one-to-many relationship between the fact table and
 									 dimension table. This relationship was pivotal for connecting transactional data with relevant dimensions for
 									  a comprehensive analysis.
-								<div>
-									<img class="image main" src="images/model.PNG"  alt="" />
-								</div>
-								</p>	
+								
+								</p>
+								
 								<p>
-									<ul>
+									
+									<strong>
 										Key Findings:
-										The dashboard revealed several key insights for the current Year:	
+									</strong>
+										The dashboard revealed several key insights for the current Year 2020:
+									<div>
+										<img class="image column" src="images/olkkpi.PNG"  alt="" />
+									</div>
+									<ul>	
 										<li>Total transactions: 707</li>	
-										<li>Total profit: $62.8 million</li>
-										<li>Total revenue: $627.8 million</li>
+										<li>Total profit: $63 million</li>
+										<li>Total revenue: $628 million</li>
 										<li>Total number of cookies sold: 371,000</li>
 										<li>Production cost: $588 million</li>	
 									</ul>
 								</p>
-								<div>
-									<img class="image chart" src="images/kpi.PNG"  alt="" />
-								</div>
+								
 								<p>
-								<strong>
-									Profit Analysis by Year:
-								</strong>		
-									2019: A downward trend was observed from the first quarter to the third quarter, followed by an upward trend 
-									in the fourth quarter.
-								<div>
-									<img class="image chart" src="images/areachart.PNG" alt="" />
-								</div>
-									2020: An upward trend was noted from the first quarter to the second quarter, followed by a steep downward trend
-									 from the third quarter to the fourth quarter.
-								<div>
-									<img class="image chart" src="images/Areachart2.PNG" alt="" />
-								</div>
+									<strong>
+										Profit Analysis by Year:
+									</strong>
+								
+									<h4>
+										<strong>2017:</strong>
+									</h4>
+									
+										<img class="image chart" src="images/olkareachart17.PNG" alt="" />
+											
+										The observed pattern indicates a positive trajectory from the initial quarter through the third quarter,
+										followed by a notable and abrupt ascent in the fourth quarter. This distinctive trend highlights the 
+										dynamic shifts in performance and a slow growth in the fourth quarter.
 								</p>
 								<p>
-								<strong>
-									Total Transactions by Customer:
-								</strong>
-
-									A cluster bar chart depicted that Acme Grocery Stores and Promo had 49 and 14 transactions, respectively, 
-									categorizing them as low-purchasing customers.
+									<h4>
+										<strong>2018:</strong>
+									</h4>
+									
+										<img class="image chart" src="images/olkareachart18.PNG" alt="" />
+												
+										The area chart illustrates a consistent upward trajectory from the first quarter through 
+										the third quarter. Notably, a pronounced and rapid descent in performance is observed in the transition 
+										from the third quarter to the fourth quarter. This visual depiction underscores the need for a detailed
+										 examination of the factors influencing these trends, providing valuable insights for strategic analysis
+										  and decision-making.
 								</p>
-								<div>
-									<img class="image chart" src="images/transactionsbycust1.PNG" alt="" />
-								</div>
 								<p>
-								</strong>
-								<strong>
-									Total Transactions by Shipping Duration:
-								</strong>
-									An analysis of shipping duration revealed that all transactions with Promo and Acme Grocery Store experienced
-									 delays. This delay may be a contributing factor to the low purchase volumes from these customers.
+									<h4>
+										<strong>2019:</strong>
+									</h4>
+									
+										<img class="image chart" src="images/olkareachart19.PNG" alt="" />
+												
+										An analysis of the data reveals a visible downward trend from the first quarter through the third quarter, 
+										succeeded by a noteworthy upward trajectory in the fourth quarter. This observed pattern emphasizes the dynamic
+										 nature of the data and highlights the importance of exploring the underlying factors contributing to these trends
+										  for a comprehensive understanding the rapid change during the specified period.
+								</p>		
+									
+								<p>
+									<h4>
+										<strong>2020:</strong>
+									</h4>
+									
+										<img class="image chart" src="images/Areachart2.PNG" alt="" />
+												
+										In the fiscal year 2020, an upward trend was noted from the first quarter to the second quarter, followed by a steep downward 
+								trend from the third quarter to the fourth quarter. This analysis of quarterly variations underscores the importance of 
+								exploring the underlying factors influencing these trends, providing valuable insights for strategic decision-making and future
+								 planning.
+								
 								</p>
+								
+								</p>
+								
+								
+								
 								<p>	
-								<strong>
-									Recommendation:
-								</strong>
-									Based on the insights gathered from the dashboard, it is deduced that the low purchase from Promo and 
-									Acme Grocery Store could be attributed to delayed shipments. Therefore, it is recommended that OLK Store 
-									addresses and improves the efficiency of its shipping processes to enhance customer satisfaction and 
-									potentially increase purchases from these clients.
+									<strong>
+										Recommendation:
+									</strong>
+								</p>
+								<h4>
+									Optimization of Shipping Processes:
+								</h4>
+
+								Given the impact of shipment duration on customer satisfaction and business performance,
+								 it is recommended to conduct a comprehensive review of shipping processes. This may involve
+								  streamlining operations to reduce shipping durations, particularly for expedited shipments. 
+								  Improved logistics efficiency can contribute to enhanced customer experience and loyalty.
+								<h4>
+									Strategic Customer Engagement:
+								</h4>
+									The customer segmentation analysis identified establishments with transactional volumes
+									 equal to or exceeding 300 as high-purchasing customers. It is advisable to implement 
+									 targeted engagement strategies for these customers, such as personalized offers, loyalty 
+									 programs, or exclusive promotions. Strengthening relationships with high-purchasing 
+									 customers can have a positive impact on overall business performance.
+								<h4>
+									Continuous Monitoring and Adaptation:
+								</h4>
+								The dynamic nature of performance trends, as evident from the yearly analyses, underscores 
+								the importance of continuous monitoring and adaptability. OLK Store should establish a proactive
+								 approach to monitor market changes, customer behaviors, and internal operations, allowing for 
+								 timely adjustments to business strategies.
+								
 								</p>
 								<p>
-								<strong>
-									Conclusion:
-								</strong>
-									This diagnostic analysis provides a comprehensive overview of OLK Store's transactional data,
-									 identifying specific issues with two key customers. By addressing the highlighted shipping delays,
-									  OLK Store can potentially enhance its relationship with Promo and Acme Grocery Store, leading to 
-									  increased sales and improved overall performance.
+									<strong>
+										Conclusion:
+									</strong>
+							 	</p>
+								 In conclusion, the descriptive analysis conducted on OLK Store using Power BI has provided
+								  valuable insights into various facets of the business, ranging from customer transactions 
+								  to profitability and production costs. The detailed examination of key performance indicators 
+								  and trends over the years has offered a comprehensive understanding of the business dynamics.
+
+								 The findings emphasize the need for strategic adaptations in shipping processes and customer
+								  engagement strategies. Continuous monitoring and proactive decision-making are crucial for 
+								  navigating the evolving market landscape.
+								 
+								 By implementing the recommended strategies and maintaining a flexible approach, OLK Store
+								  can position itself for sustained growth, improved customer relations, and optimized 
+								  operational efficiency within the wholesale cookies supply domain. This analysis serves 
+								  as a foundation for informed decision-making and strategic planning to drive the future 
+								  success of OLK Store.
 								</p>	
 							</section>
 
@@ -145,7 +324,11 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Samuel Okon</li></ul>
+						<ul>
+							<li>&copy; Samuel Okon</li>
+							<li><a href="https://www.linkedin.com/in/samuel-okon-294325152/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/flameloaded?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
 					</div>
 
 			</div>
