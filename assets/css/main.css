@@ -2642,6 +2642,16 @@ input, select, textarea {
 			margin: 1rem 0;
 			width: 50%;
 		}
+		.image.card {
+			display: block;
+			margin: 1rem 0;
+			width: 30%;
+		}
+		.image.kpi {
+			display: block;
+			margin: 1rem 0;
+			width: 20%;
+		}
 		.image.column {
 			display: block;
 			margin: 1rem 0;
