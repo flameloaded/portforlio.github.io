@@ -2635,12 +2635,12 @@ input, select, textarea {
 				display: flex;                /* Enable flexbox */
 				justify-content: center;       /* Center image horizontally */
 				align-items: center;           /* Center image vertically */
-				height: 100vh;                 /* Full viewport height */
+				height: auto;                 /* Full viewport height */
 			}
 
 		.image.main {
 			display: block;
-    		width: 70%;
+    		width: 60%;
     		
 			
 			;
